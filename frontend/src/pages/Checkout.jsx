@@ -329,7 +329,7 @@ const Checkout = () => {
       <footer className="py-8" style={{ borderTop: '1px solid rgba(255, 255, 255, 0.1)' }}>
         <div className="container mx-auto px-6">
           <div className="text-center text-sm" style={{ color: 'rgb(161, 161, 170)' }}>
-            <p>© {new Date().getFullYear()} Funnel-IQ. Secure payments powered by Razorpay.</p>
+            <p>© {new Date().getFullYear()} Funnel-IQ by aykaa.me. Secure payments powered by Razorpay.</p>
           </div>
         </div>
       </footer>
