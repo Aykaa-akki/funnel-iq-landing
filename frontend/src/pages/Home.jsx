@@ -11,14 +11,6 @@ import {
 
 const Home = () => {
   const [expandedFaq, setExpandedFaq] = useState(null);
-  const [currentHeadlineIndex, setCurrentHeadlineIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentHeadlineIndex((prev) => (prev + 1) % mockData.heroRotatingHeadlines.length);
-    }, 3000);
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <div className="min-h-screen" style={{ background: 'rgb(17, 17, 19)', color: 'rgb(255, 255, 255)' }}>
