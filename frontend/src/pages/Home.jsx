@@ -531,7 +531,22 @@ const Home = () => {
           </div>
           
           <div className="pt-8 text-center text-sm" style={{ borderTop: '1px solid rgba(255, 255, 255, 0.1)', color: 'rgb(161, 161, 170)' }}>
-            <p>© {new Date().getFullYear()} Funnel-IQ. All rights reserved. • GDPR Compliant • Secure Payments via Razorpay</p>
+            <p className="mb-4">© {new Date().getFullYear()} Funnel-IQ by aykaa.me. All rights reserved. • GDPR Compliant • Secure Payments via Razorpay</p>
+            
+            {/* Disclaimer */}
+            <div className="mt-8 pt-6 text-xs" style={{ borderTop: '1px solid rgba(255, 255, 255, 0.05)', color: 'rgb(120, 120, 120)', lineHeight: '1.6', maxWidth: '900px', margin: '0 auto' }}>
+              <p className="mb-3">
+                This site is not part of, or endorsed by, Facebook™, Google™, LinkedIn™, or any other social media platform in any way. 
+                All product names, logos, and brands are property of their respective owners. All company, product, and service names used on this website are for identification purposes only. Use of these names, logos, and brands does not imply endorsement.
+              </p>
+              <p>
+                FACEBOOK™ is a trademark of FACEBOOK™, Inc. | 
+                YOUTUBE™ and GOOGLE™ are trademarks of GOOGLE™ LLC. | 
+                LINKEDIN™ is a trademark of MICROSOFT™ Corporation. | 
+                Profile scores and review results may vary with each attempt or based on individual profiles. 
+                Funnel-IQ does not guarantee specific conversion rates or revenue increases. Our services are designed to identify optimization opportunities and provide actionable recommendations for better funnel performance.
+              </p>
+            </div>
           </div>
         </div>
       </footer>
