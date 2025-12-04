@@ -499,10 +499,13 @@ const Home = () => {
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-4 gap-12 mb-12">
             <div className="md:col-span-2">
-              <img src={mockData.brand.logo} alt="Funnel-IQ" className="h-12 w-auto mb-4" />
+              <img src={mockData.brand.logo} alt="Funnel-IQ" className="h-16 w-auto mb-4" />
               <p className="mb-6" style={{ color: 'rgb(161, 161, 170)' }}>{mockData.brand.slogan}</p>
-              <p className="text-sm" style={{ color: 'rgb(161, 161, 170)', lineHeight: '1.6' }}>
+              <p className="text-sm mb-4" style={{ color: 'rgb(161, 161, 170)', lineHeight: '1.6' }}>
                 Expert funnel audits delivered in 8-10 hours. We analyze your entire conversion funnel and provide actionable insights to maximize ROI.
+              </p>
+              <p className="text-sm" style={{ color: 'rgb(161, 161, 170)' }}>
+                Contact: <a href={`mailto:${mockData.supportEmail}`} className="underline transition-colors" style={{ color: 'rgb(218, 255, 1)' }}>{mockData.supportEmail}</a>
               </p>
             </div>
             
