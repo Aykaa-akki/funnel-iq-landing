@@ -181,12 +181,12 @@ const ThankYou = () => {
           <div className="text-center">
             <p className="mb-4" style={{ color: 'rgb(161, 161, 170)' }}>Have questions? Need support?</p>
             <a 
-              href="mailto:support@funnel-iq.com"
+              href={`mailto:${mockData.supportEmail}`}
               className="inline-flex items-center gap-2 transition-colors"
               style={{ color: 'rgb(218, 255, 1)', textDecoration: 'underline' }}
             >
               <Mail size={20} />
-              support@funnel-iq.com
+              {mockData.supportEmail}
             </a>
           </div>
 
