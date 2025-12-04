@@ -77,7 +77,7 @@ const Checkout = () => {
         <div className="container mx-auto px-6">
           <div className="flex items-center justify-between">
             <Link to="/" className="flex items-center gap-3">
-              <img src={mockData.brand.logo} alt="Funnel-IQ" className="h-10 w-auto" />
+              <img src={mockData.brand.logo} alt="Funnel-IQ" className="h-16 w-auto" />
             </Link>
             <div className="flex items-center gap-2" style={{ color: 'rgb(161, 161, 170)' }}>
               <Lock size={16} />
