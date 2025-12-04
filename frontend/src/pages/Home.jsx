@@ -85,7 +85,7 @@ const Home = () => {
           
           {/* Solve */}
           <p className="text-lg md:text-xl mb-10" style={{ color: 'rgb(161, 161, 170)', lineHeight: '1.6' }}>
-            {mockData.hero.solve}
+            Funnel-IQ identifies exactly where you're losing customers and gives you a proven 30-day action plan to fix it. Get your expert audit in 8-10 hours and start converting more visitors into paying customers.
           </p>
 
           {/* CTAs */}
