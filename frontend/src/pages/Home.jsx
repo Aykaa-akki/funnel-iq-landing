@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle2, Clock, Shield, TrendingUp, Users, Zap, Target, FileText, BarChart3, Star, ChevronDown } from 'lucide-react';
 import { mockData } from '../mock';
