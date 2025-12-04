@@ -73,34 +73,14 @@ const Home = () => {
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-12 md:py-24">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Animated Rotating Problem Headlines */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-6" style={{ lineHeight: '1.0', letterSpacing: '-0.02em', minHeight: '120px' }}>
-            <span 
-              key={currentHeadlineIndex}
-              style={{
-                display: 'inline-block',
-                animation: 'fadeInUp 0.6s ease-out'
-              }}
-            >
-              {mockData.heroRotatingHeadlines[currentHeadlineIndex]}
-            </span>
+          {/* Strong Hero Headline */}
+          <h1 className="text-5xl md:text-7xl font-bold mb-6" style={{ lineHeight: '1.0', letterSpacing: '-0.02em' }}>
+            Stop Losing Money on Your Funnel
           </h1>
-          <style>{`
-            @keyframes fadeInUp {
-              from {
-                opacity: 0;
-                transform: translateY(20px);
-              }
-              to {
-                opacity: 1;
-                transform: translateY(0);
-              }
-            }
-          `}</style>
           
           {/* Agitate */}
           <p className="text-xl md:text-2xl mb-8" style={{ color: 'rgb(218, 218, 218)', lineHeight: '1.6' }}>
-            {mockData.hero.agitate}
+            You're driving traffic and spending on ads, but visitors leave without converting. Every day, thousands of rupees slip through the cracks in your funnel.
           </p>
           
           {/* Solve */}
