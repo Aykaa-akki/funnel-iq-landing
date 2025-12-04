@@ -19,14 +19,14 @@ const ThankYou = () => {
       <header className="py-6" style={{ borderBottom: '1px solid rgba(255, 255, 255, 0.1)' }}>
         <div className="container mx-auto px-6">
           <Link to="/" className="flex items-center gap-3">
-            <img src={mockData.brand.logo} alt="Funnel-IQ" className="h-10 w-auto" />
+            <img src={mockData.brand.logo} alt="Funnel-IQ" className="h-16 w-auto" />
           </Link>
         </div>
       </header>
 
       {/* Main Content */}
       <div className="container mx-auto px-6 py-16 md:py-24">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           {/* Success Icon */}
           <div className="flex justify-center mb-8">
             <div 
