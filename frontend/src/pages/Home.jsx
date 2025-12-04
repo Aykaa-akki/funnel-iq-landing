@@ -420,11 +420,11 @@ const Home = () => {
 
       {/* Testimonials */}
       <section className="container mx-auto px-6 py-20 md:py-32">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">What Our Clients Say</h2>
-          <p className="text-xl text-center mb-16" style={{ color: 'rgb(161, 161, 170)' }}>Real results from real businesses</p>
+          <p className="text-xl text-center mb-16" style={{ color: 'rgb(161, 161, 170)' }}>Real results from real businesses across industries</p>
           
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
             {mockData.testimonials.map((testimonial, idx) => (
               <div 
                 key={idx}
