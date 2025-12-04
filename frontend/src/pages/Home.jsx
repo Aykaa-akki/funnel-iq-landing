@@ -522,10 +522,10 @@ const Home = () => {
             <div>
               <h4 className="font-semibold mb-4">Legal</h4>
               <ul className="space-y-3 text-sm">
-                <li><a href="#" className="transition-colors" style={{ color: 'rgb(161, 161, 170)' }} onMouseEnter={(e) => e.target.style.color = 'rgb(218, 255, 1)'} onMouseLeave={(e) => e.target.style.color = 'rgb(161, 161, 170)'}>Privacy Policy</a></li>
-                <li><a href="#" className="transition-colors" style={{ color: 'rgb(161, 161, 170)' }} onMouseEnter={(e) => e.target.style.color = 'rgb(218, 255, 1)'} onMouseLeave={(e) => e.target.style.color = 'rgb(161, 161, 170)'}>Terms of Service</a></li>
-                <li><a href="#" className="transition-colors" style={{ color: 'rgb(161, 161, 170)' }} onMouseEnter={(e) => e.target.style.color = 'rgb(218, 255, 1)'} onMouseLeave={(e) => e.target.style.color = 'rgb(161, 161, 170)'}>Refund Policy</a></li>
-                <li><a href="#" className="transition-colors" style={{ color: 'rgb(161, 161, 170)' }} onMouseEnter={(e) => e.target.style.color = 'rgb(218, 255, 1)'} onMouseLeave={(e) => e.target.style.color = 'rgb(161, 161, 170)'}>Contact Us</a></li>
+                <li><Link to="/privacy-policy" className="transition-colors" style={{ color: 'rgb(161, 161, 170)' }} onMouseEnter={(e) => e.target.style.color = 'rgb(218, 255, 1)'} onMouseLeave={(e) => e.target.style.color = 'rgb(161, 161, 170)'}>Privacy Policy</Link></li>
+                <li><Link to="/terms-of-use" className="transition-colors" style={{ color: 'rgb(161, 161, 170)' }} onMouseEnter={(e) => e.target.style.color = 'rgb(218, 255, 1)'} onMouseLeave={(e) => e.target.style.color = 'rgb(161, 161, 170)'}>Terms of Use</Link></li>
+                <li><Link to="/refund-policy" className="transition-colors" style={{ color: 'rgb(161, 161, 170)' }} onMouseEnter={(e) => e.target.style.color = 'rgb(218, 255, 1)'} onMouseLeave={(e) => e.target.style.color = 'rgb(161, 161, 170)'}>Refund Policy</Link></li>
+                <li><a href={`mailto:${mockData.supportEmail}`} className="transition-colors" style={{ color: 'rgb(161, 161, 170)' }} onMouseEnter={(e) => e.target.style.color = 'rgb(218, 255, 1)'} onMouseLeave={(e) => e.target.style.color = 'rgb(161, 161, 170)'}>Contact Us</a></li>
               </ul>
             </div>
           </div>
