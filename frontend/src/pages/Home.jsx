@@ -297,7 +297,7 @@ const Home = () => {
 
       {/* Sample Findings */}
       <section id="sample" className="container mx-auto px-6 py-20 md:py-32">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Real Findings, Real Results</h2>
           <p className="text-xl text-center mb-16" style={{ color: 'rgb(161, 161, 170)' }}>Examples of issues we've found and fixed</p>
           
