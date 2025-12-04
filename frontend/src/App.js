@@ -11,7 +11,7 @@ import RefundPolicy from './pages/RefundPolicy';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/funnel-iq">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/checkout" element={<Checkout />} />
