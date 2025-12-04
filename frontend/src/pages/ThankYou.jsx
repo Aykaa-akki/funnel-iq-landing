@@ -66,6 +66,34 @@ const ThankYou = () => {
             </div>
           )}
 
+          {/* Tally Form Integration */}
+          <div className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4 text-center">Help Us Serve You Better</h2>
+            <p className="text-center mb-6" style={{ color: 'rgb(161, 161, 170)' }}>
+              Please share a few more details so we can customize your audit report
+            </p>
+            <div style={{ 
+              background: 'rgb(26, 28, 30)', 
+              border: '1px solid rgba(255, 255, 255, 0.1)', 
+              borderRadius: '16px',
+              overflow: 'hidden'
+            }}>
+              <iframe 
+                src="https://tally.so/r/0Qrzqy" 
+                width="100%" 
+                height="600" 
+                frameBorder="0" 
+                marginHeight="0" 
+                marginWidth="0" 
+                title="Funnel-IQ Additional Information"
+                style={{ 
+                  border: 'none',
+                  borderRadius: '16px'
+                }}
+              ></iframe>
+            </div>
+          </div>
+
           {/* Next Steps */}
           <div className="p-8 mb-8" style={{ background: 'rgb(26, 28, 30)', border: '1px solid rgba(255, 255, 255, 0.1)', borderRadius: '16px' }}>
             <h2 className="text-xl font-semibold mb-6">What Happens Next?</h2>
