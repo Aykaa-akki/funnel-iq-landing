@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle2, Clock, Shield, TrendingUp, Users, Zap, Target, FileText, BarChart3, Star, ChevronDown } from 'lucide-react';
 import { mockData } from '../mock';
@@ -11,6 +11,14 @@ import {
 
 const Home = () => {
   const [expandedFaq, setExpandedFaq] = useState(null);
+  const [currentHeadlineIndex, setCurrentHeadlineIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentHeadlineIndex((prev) => (prev + 1) % mockData.heroRotatingHeadlines.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="min-h-screen" style={{ background: 'rgb(17, 17, 19)', color: 'rgb(255, 255, 255)' }}>
