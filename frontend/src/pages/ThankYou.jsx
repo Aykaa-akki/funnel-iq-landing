@@ -66,32 +66,44 @@ const ThankYou = () => {
             </div>
           )}
 
-          {/* Tally Form Integration */}
-          <div className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4 text-center">Help Us Serve You Better</h2>
-            <p className="text-center mb-6" style={{ color: 'rgb(161, 161, 170)' }}>
-              Please share a few more details so we can customize your audit report
+          {/* Additional Information CTA */}
+          <div className="p-8 mb-8 text-center" style={{ background: 'rgb(26, 28, 30)', border: '1px solid rgba(255, 255, 255, 0.1)', borderRadius: '16px' }}>
+            <h2 className="text-2xl font-semibold mb-4">Help Us Serve You Better</h2>
+            <p className="mb-6" style={{ color: 'rgb(161, 161, 170)' }}>
+              Share a few more details about your business so we can customize your audit report and provide more targeted recommendations.
             </p>
-            <div style={{ 
-              background: 'rgb(26, 28, 30)', 
-              border: '1px solid rgba(255, 255, 255, 0.1)', 
-              borderRadius: '16px',
-              overflow: 'hidden'
-            }}>
-              <iframe 
-                src="https://tally.so/r/0Qrzqy" 
-                width="100%" 
-                height="600" 
-                frameBorder="0" 
-                marginHeight="0" 
-                marginWidth="0" 
-                title="Funnel-IQ Additional Information"
-                style={{ 
-                  border: 'none',
-                  borderRadius: '16px'
-                }}
-              ></iframe>
-            </div>
+            <a
+              href="https://tally.so/r/0Qrzqy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary inline-block"
+              style={{
+                background: 'rgb(218, 255, 1)',
+                color: 'rgb(17, 17, 19)',
+                border: 'none',
+                borderRadius: '12px',
+                padding: '16px 40px',
+                fontSize: '18px',
+                fontWeight: '600',
+                cursor: 'pointer',
+                transition: 'all 0.2s ease',
+                textDecoration: 'none',
+                display: 'inline-block'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = 'rgb(166, 190, 21)';
+                e.currentTarget.style.transform = 'translateY(-2px)';
+                e.currentTarget.style.boxShadow = '0 8px 25px rgba(218, 255, 1, 0.3)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = 'rgb(218, 255, 1)';
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = 'none';
+              }}
+            >
+              Fill Additional Details (2 min)
+            </a>
+            <p className="text-xs mt-4" style={{ color: 'rgb(161, 161, 170)' }}>Optional but helps us tailor the audit to your specific needs</p>
           </div>
 
           {/* Next Steps */}
