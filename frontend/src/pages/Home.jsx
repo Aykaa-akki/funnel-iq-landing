@@ -180,7 +180,7 @@ const Home = () => {
               <div className="text-sm mt-1" style={{ color: 'rgb(161, 161, 170)' }}>Delivery Time</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold" style={{ color: 'rgb(218, 255, 1)' }}>{mockData.stats.avgConversionLift}%</div>
+              <div className="text-4xl font-bold" style={{ color: 'rgb(218, 255, 1)' }}>{mockData.stats.avgConversionLift}</div>
               <div className="text-sm mt-1" style={{ color: 'rgb(161, 161, 170)' }}>Avg. Conversion Lift</div>
             </div>
           </div>
