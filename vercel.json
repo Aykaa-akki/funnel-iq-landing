@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/funnel-iq/(.*)",
+      "destination": "/funnel-iq/index.html"
+    }
+  ]
+}
