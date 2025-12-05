@@ -64,21 +64,23 @@ const Home = () => {
 
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-12 md:py-24">
-        <div className="max-w-4xl mx-auto text-center">
-          {/* Strong Hero Headline */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-6" style={{ lineHeight: '1.0', letterSpacing: '-0.02em' }}>
-            Stop Losing Money on Your Funnel
-          </h1>
-          
-          {/* Agitate */}
-          <p className="text-xl md:text-2xl mb-8" style={{ color: 'rgb(218, 218, 218)', lineHeight: '1.6' }}>
-            You're driving traffic and spending on ads, but visitors leave without converting. Every day, thousands of rupees slip through the cracks in your funnel.
-          </p>
-          
-          {/* Solve */}
-          <p className="text-lg md:text-xl mb-10" style={{ color: 'rgb(161, 161, 170)', lineHeight: '1.6' }}>
-            Funnel-IQ identifies exactly where you're losing customers and gives you a proven 30-day action plan to fix it. Get your expert audit in 8-10 hours and start converting more visitors into paying customers.
-          </p>
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              {/* Strong Hero Headline with Highlights */}
+              <h1 className="text-5xl md:text-6xl font-bold mb-6" style={{ lineHeight: '1.1', letterSpacing: '-0.02em' }}>
+                Stop <span style={{ color: 'rgb(218, 255, 1)', background: 'rgba(218, 255, 1, 0.1)', padding: '0 8px' }}>Losing Money</span> on Your Funnel
+              </h1>
+              
+              {/* Agitate with highlights */}
+              <p className="text-xl md:text-2xl mb-8" style={{ color: 'rgb(218, 218, 218)', lineHeight: '1.6' }}>
+                You're driving traffic and spending on ads, but visitors <strong style={{ color: 'rgb(218, 255, 1)' }}>leave without converting</strong>. Every day, thousands of rupees slip through the cracks.
+              </p>
+              
+              {/* Solve */}
+              <p className="text-lg md:text-xl mb-10" style={{ color: 'rgb(161, 161, 170)', lineHeight: '1.6' }}>
+                Funnel-IQ identifies <strong>exactly where you're losing customers</strong> and gives you a proven <strong style={{ color: 'rgb(218, 255, 1)' }}>30-day action plan</strong> to fix it. Get your expert audit in <strong>8-10 hours</strong> and start converting more visitors into paying customers.
+              </p>
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
