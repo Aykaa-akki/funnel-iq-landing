@@ -82,41 +82,45 @@ const Home = () => {
                 Funnel-IQ identifies <strong>exactly where you're losing customers</strong> and gives you a proven <strong style={{ color: 'rgb(218, 255, 1)' }}>30-day action plan</strong> to fix it. Get your expert audit in <strong>8-10 hours</strong> and start converting more visitors into paying customers.
               </p>
 
-          {/* CTAs */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-            <Link 
-              to="/checkout"
-              className="btn-primary w-full sm:w-auto"
-              style={{
-                background: 'rgb(218, 255, 1)',
-                color: 'rgb(17, 17, 19)',
-                border: 'none',
-                borderRadius: '12px',
-                padding: '18px 40px',
-                fontSize: '18px',
-                fontWeight: '600',
-                cursor: 'pointer',
-                transition: 'all 0.2s ease',
-                textDecoration: 'none',
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '8px',
-                minHeight: '56px'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.background = 'rgb(166, 190, 21)';
-                e.currentTarget.style.transform = 'translateY(-2px)';
-                e.currentTarget.style.boxShadow = '0 12px 30px rgba(218, 255, 1, 0.35)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.background = 'rgb(218, 255, 1)';
-                e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.boxShadow = 'none';
-              }}
-            >
-              Get My FunnelIQ Audit
-              <ArrowRight size={20} />
-            </Link>
+              {/* CTAs with subtexts */}
+              <div className="flex flex-col gap-4 mb-12">
+                <Link 
+                  to="/checkout"
+                  className="btn-primary w-full sm:w-auto text-center"
+                  style={{
+                    background: 'rgb(218, 255, 1)',
+                    color: 'rgb(17, 17, 19)',
+                    border: 'none',
+                    borderRadius: '12px',
+                    padding: '18px 40px',
+                    fontSize: '18px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    transition: 'all 0.2s ease',
+                    textDecoration: 'none',
+                    display: 'inline-flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    gap: '4px',
+                    minHeight: '72px'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.background = 'rgb(166, 190, 21)';
+                    e.currentTarget.style.transform = 'translateY(-2px)';
+                    e.currentTarget.style.boxShadow = '0 12px 30px rgba(218, 255, 1, 0.35)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.background = 'rgb(218, 255, 1)';
+                    e.currentTarget.style.transform = 'translateY(0)';
+                    e.currentTarget.style.boxShadow = 'none';
+                  }}
+                >
+                  <span className="flex items-center gap-2">
+                    Get My FunnelIQ Audit
+                    <ArrowRight size={20} />
+                  </span>
+                  <span style={{ fontSize: '12px', opacity: 0.8 }}>✓ 8-10 hour delivery • 100% money-back guarantee</span>
+                </Link>
 
             <a 
               href="#sample"
