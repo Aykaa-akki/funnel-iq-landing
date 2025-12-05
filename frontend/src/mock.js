@@ -148,6 +148,7 @@ export const mockData = {
     },
     {
       name: "Priya Sharma",
+      initials: "PS",
       title: "Marketing Head, SaaS",
       quote: "Best ₹5,999 I've spent. The report was incredibly detailed and the action plan was spot-on. ROI increased by 28% in first month.",
       result: "+28% ROI",
@@ -155,6 +156,7 @@ export const mockData = {
     },
     {
       name: "Amit Verma",
+      initials: "AV",
       title: "CEO, FinTech",
       quote: "We were burning ₹80K/month on ads with poor conversions. Funnel-IQ's audit helped us fix our landing page — now we're at 3.1% conversion rate.",
       result: "3.1% conversion",
@@ -162,6 +164,7 @@ export const mockData = {
     },
     {
       name: "Sneha Reddy",
+      initials: "SR",
       title: "Director, E-commerce Fashion",
       quote: "I was skeptical about digital audits, but the insights were game-changing. Fixed our mobile checkout flow and sales jumped 42% in just 2 weeks.",
       result: "+42% sales",
@@ -169,6 +172,7 @@ export const mockData = {
     },
     {
       name: "Vikram Malhotra",
+      initials: "VM",
       title: "VP Marketing, Healthcare Services",
       quote: "The audit revealed issues we had no idea existed. Implementing their recommendations reduced our cost per lead by 47%. Absolutely worth it.",
       result: "-47% CPL",
@@ -176,6 +180,7 @@ export const mockData = {
     },
     {
       name: "Ananya Iyer",
+      initials: "AI",
       title: "Founder, Coaching & Consulting",
       quote: "We were getting traffic but zero bookings. Funnel-IQ identified 8 critical bottlenecks. After fixes, our booking rate went from 0.8% to 4.2%.",
       result: "5x bookings",
@@ -183,6 +188,7 @@ export const mockData = {
     },
     {
       name: "Karthik Nair",
+      initials: "KN",
       title: "Head of Growth, Real Estate Platform",
       quote: "Our lead quality was terrible. The audit showed us exactly where we were attracting wrong visitors. Made changes, now 61% leads are qualified.",
       result: "61% qualified leads",
@@ -190,6 +196,7 @@ export const mockData = {
     },
     {
       name: "Meera Patel",
+      initials: "MP",
       title: "Owner, D2C Beauty Brand",
       quote: "I thought our funnel was fine. Boy, was I wrong! The report uncovered 15 issues. Fixed the critical ones and revenue jumped 38% in a month.",
       result: "+38% revenue",
@@ -197,6 +204,7 @@ export const mockData = {
     },
     {
       name: "Arjun Desai",
+      initials: "AD",
       title: "CMO, Travel & Hospitality",
       quote: "Best investment for our business. The detailed breakdown of where we're losing customers was eye-opening. Conversion rate tripled after implementing fixes.",
       result: "3x conversion",
@@ -204,6 +212,7 @@ export const mockData = {
     },
     {
       name: "Divya Krishnan",
+      initials: "DK",
       title: "Co-founder, Food & Beverage Delivery",
       quote: "We were spending ₹2L/month on ads with minimal returns. Funnel-IQ showed us the exact leaks. Fixed them and ROAS went from 1.2x to 3.8x.",
       result: "3.8x ROAS",
@@ -211,6 +220,7 @@ export const mockData = {
     },
     {
       name: "Rohan Gupta",
+      initials: "RG",
       title: "Director, Manufacturing B2B",
       quote: "Never thought B2B funnels needed this level of optimization. The audit proved me wrong. Lead-to-customer rate improved by 52% in 6 weeks.",
       result: "+52% conversion",
@@ -218,6 +228,7 @@ export const mockData = {
     },
     {
       name: "Kavya Menon",
+      initials: "KM",
       title: "Head of Sales, Retail Chain",
       quote: "Our online store was underperforming badly. Funnel-IQ's recommendations were specific and actionable. Online revenue up 45% and still growing.",
       result: "+45% revenue",
@@ -225,6 +236,7 @@ export const mockData = {
     },
     {
       name: "Siddharth Rao",
+      initials: "SR",
       title: "Founder, Digital Marketing Agency",
       quote: "Even as a marketer, I missed critical issues in our own funnel. The external audit perspective was invaluable. Doubled our client signups in 4 weeks.",
       result: "2x signups",
@@ -232,6 +244,7 @@ export const mockData = {
     },
     {
       name: "Pooja Jain",
+      initials: "PJ",
       title: "CEO, Professional Services & Training",
       quote: "We had good traffic but terrible conversion. The audit identified 11 friction points. After optimization, our enrollment rate jumped from 2% to 7.8%.",
       result: "3.9x enrollments",
@@ -239,6 +252,7 @@ export const mockData = {
     },
     {
       name: "Aditya Kapoor",
+      initials: "AK",
       title: "VP, Consumer Electronics E-commerce",
       quote: "Spent months trying to figure out why sales were plateauing. Funnel-IQ found the issues in 8 hours. Implemented fixes and broke through the plateau immediately.",
       result: "+31% sales",
