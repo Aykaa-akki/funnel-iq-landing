@@ -405,14 +405,16 @@ const Home = () => {
                   color: 'rgb(17, 17, 19)',
                   border: 'none',
                   borderRadius: '12px',
-                  padding: '18px 40px',
+                  padding: '20px 40px',
                   fontSize: '18px',
                   fontWeight: '600',
                   cursor: 'pointer',
                   transition: 'all 0.2s ease',
                   textDecoration: 'none',
-                  display: 'block',
-                  textAlign: 'center'
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  gap: '6px'
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.background = 'rgb(166, 190, 21)';
@@ -425,14 +427,15 @@ const Home = () => {
                   e.currentTarget.style.boxShadow = 'none';
                 }}
               >
-                Get My FunnelIQ Audit Now
+                <span className="text-xl">Get My FunnelIQ Audit Now</span>
+                <span style={{ fontSize: '13px', opacity: 0.85 }}>↓ Start fixing your funnel in the next 8-10 hours</span>
               </Link>
 
-              <div className="mt-6 flex items-center justify-center gap-6 text-sm" style={{ color: 'rgb(161, 161, 170)' }}>
+              <div className="mt-6 grid grid-cols-2 md:flex md:items-center md:justify-center gap-4 md:gap-6 text-xs md:text-sm" style={{ color: 'rgb(161, 161, 170)' }}>
                 {mockData.guarantees.map((guarantee, idx) => (
-                  <div key={idx} className="flex items-center gap-2">
-                    <Shield size={16} style={{ color: 'rgb(218, 255, 1)' }} />
-                    <span>{guarantee}</span>
+                  <div key={idx} className="flex items-center gap-2 justify-center md:justify-start p-3 md:p-0 rounded-lg md:rounded-none" style={{ background: 'rgba(218, 255, 1, 0.05)', border: '1px solid rgba(218, 255, 1, 0.1)' }}>
+                    <Shield size={16} style={{ color: 'rgb(218, 255, 1)' }} className="flex-shrink-0" />
+                    <span className="text-center md:text-left">{guarantee}</span>
                   </div>
                 ))}
               </div>
