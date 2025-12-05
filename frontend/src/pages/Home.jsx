@@ -434,10 +434,19 @@ const Home = () => {
                   e.currentTarget.style.transform = 'translateY(0)';
                 }}
               >
-                <div className="flex gap-1 mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} size={16} fill="rgb(218, 255, 1)" style={{ color: 'rgb(218, 255, 1)' }} />
-                  ))}
+                {/* Avatar with Initials */}
+                <div className="flex items-center gap-3 mb-4">
+                  <div 
+                    className="w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg"
+                    style={{ background: 'rgba(218, 255, 1, 0.15)', color: 'rgb(218, 255, 1)', border: '2px solid rgba(218, 255, 1, 0.3)' }}
+                  >
+                    {testimonial.initials}
+                  </div>
+                  <div className="flex gap-1">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star key={i} size={14} fill="rgb(218, 255, 1)" style={{ color: 'rgb(218, 255, 1)' }} />
+                    ))}
+                  </div>
                 </div>
                 <p className="mb-6 text-sm" style={{ color: 'rgb(218, 218, 218)', lineHeight: '1.6' }}>"{testimonial.quote}"</p>
                 <div className="pt-4" style={{ borderTop: '1px solid rgba(255, 255, 255, 0.1)' }}>
