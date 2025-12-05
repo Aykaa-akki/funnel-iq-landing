@@ -162,42 +162,6 @@ const ThankYou = () => {
             </div>
           </div>
 
-          {/* Sample Report CTA */}
-          <div className="p-8 mb-8 text-center" style={{ background: 'rgb(26, 28, 30)', border: '1px solid rgba(255, 255, 255, 0.1)', borderRadius: '16px' }}>
-            <h3 className="text-xl font-semibold mb-4">Want to see what you'll receive?</h3>
-            <p className="mb-6" style={{ color: 'rgb(161, 161, 170)' }}>Download our sample report to see the depth and quality of our analysis.</p>
-            <button
-              className="btn-secondary"
-              style={{
-                background: 'transparent',
-                color: 'rgb(255, 255, 255)',
-                border: '2px solid rgb(63, 63, 63)',
-                borderRadius: '12px',
-                padding: '14px 30px',
-                fontSize: '16px',
-                fontWeight: '600',
-                cursor: 'pointer',
-                transition: 'all 0.2s ease',
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '8px'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = 'rgb(218, 255, 1)';
-                e.currentTarget.style.color = 'rgb(218, 255, 1)';
-                e.currentTarget.style.background = 'rgba(218, 255, 1, 0.1)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.borderColor = 'rgb(63, 63, 63)';
-                e.currentTarget.style.color = 'rgb(255, 255, 255)';
-                e.currentTarget.style.background = 'transparent';
-              }}
-            >
-              <Download size={20} />
-              Download Sample Report
-            </button>
-          </div>
-
           {/* Support */}
           <div className="text-center">
             <p className="mb-4" style={{ color: 'rgb(161, 161, 170)' }}>Have questions? Need support?</p>
