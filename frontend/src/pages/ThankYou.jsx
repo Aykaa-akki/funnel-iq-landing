@@ -163,7 +163,7 @@ const ThankYou = () => {
           </div>
 
           {/* Support */}
-          <div className="text-center">
+          <div className="text-center mt-12">
             <p className="mb-4" style={{ color: 'rgb(161, 161, 170)' }}>Have questions? Need support?</p>
             <a 
               href={`mailto:${mockData.supportEmail}`}
@@ -173,20 +173,6 @@ const ThankYou = () => {
               <Mail size={20} />
               {mockData.supportEmail}
             </a>
-          </div>
-
-          {/* Back to Home */}
-          <div className="text-center mt-12">
-            <Link 
-              to="/"
-              className="inline-flex items-center gap-2 transition-colors"
-              style={{ color: 'rgb(161, 161, 170)' }}
-              onMouseEnter={(e) => e.currentTarget.style.color = 'rgb(218, 255, 1)'}
-              onMouseLeave={(e) => e.currentTarget.style.color = 'rgb(161, 161, 170)'}
-            >
-              <span>Back to Home</span>
-              <ArrowRight size={16} />
-            </Link>
           </div>
         </div>
       </div>
