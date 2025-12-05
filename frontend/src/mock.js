@@ -5,6 +5,13 @@ export const mockData = {
     logo: "https://customer-assets.emergentagent.com/job_funnel-analyzer-7/artifacts/m3vtujof_FullLogo_Transparent%20%281%29.png"
   },
   
+  images: {
+    hero: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwyfHxhbmFseXRpY3MlMjBkYXNoYm9hcmR8ZW58MHx8fHwxNzY0ODUyNzUwfDA&ixlib=rb-4.1.0&q=85",
+    analytics: "https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwxfHxhbmFseXRpY3MlMjBkYXNoYm9hcmR8ZW58MHx8fHwxNzY0ODUyNzUwfDA&ixlib=rb-4.1.0&q=85",
+    howItWorks: "https://images.unsplash.com/photo-1608222351212-18fe0ec7b13b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwzfHxhbmFseXRpY3MlMjBkYXNoYm9hcmR8ZW58MHx8fHwxNzY0ODUyNzUwfDA&ixlib=rb-4.1.0&q=85",
+    growth: "https://images.unsplash.com/photo-1730382624709-81e52dd294d4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGdyb3d0aHxlbnwwfHx8fDE3NjQ5MjMyNTV8MA&ixlib=rb-4.1.0&q=85"
+  },
+  
   pricing: {
     regularPrice: 11499,
     salePrice: 5999,
