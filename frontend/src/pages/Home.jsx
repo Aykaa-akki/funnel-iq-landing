@@ -326,6 +326,44 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Offer Stack Value Section */}
+      <section className="container mx-auto px-6 py-20">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">What You're Really Getting</h2>
+          <p className="text-xl text-center mb-12" style={{ color: 'rgb(161, 161, 170)' }}>Total value worth <strong style={{ color: 'rgb(218, 255, 1)' }}>₹28,500+</strong> — You pay only ₹5,999</p>
+          
+          <div className="space-y-4">
+            {[
+              { item: '47-Point Expert Funnel Audit', value: '₹15,000', description: 'Deep analysis by conversion specialists with 10+ years experience' },
+              { item: '30-50 Page Premium PDF Report', value: '₹8,000', description: 'Detailed insights with before/after examples and visual breakdowns' },
+              { item: 'Prioritized 30-Day Action Plan', value: '₹3,500', description: 'Step-by-step roadmap ranked by impact vs. effort' },
+              { item: '30-Minute Expert Consultation', value: '₹2,000', description: 'Optional call to discuss findings and clarify doubts' }
+            ].map((offer, idx) => (
+              <div 
+                key={idx}
+                className="flex items-center justify-between p-6 rounded-lg"
+                style={{ background: 'rgb(26, 28, 30)', border: '1px solid rgba(255, 255, 255, 0.1)' }}
+              >
+                <div className="flex-1">
+                  <h3 className="text-lg font-semibold mb-1">{offer.item}</h3>
+                  <p className="text-sm" style={{ color: 'rgb(161, 161, 170)' }}>{offer.description}</p>
+                </div>
+                <div className="text-right ml-6">
+                  <div className="text-xl font-bold" style={{ color: 'rgb(218, 255, 1)' }}>{offer.value}</div>
+                </div>
+              </div>
+            ))}
+            
+            <div className="p-6 rounded-lg text-center" style={{ background: 'rgba(218, 255, 1, 0.1)', border: '2px solid rgb(218, 255, 1)' }}>
+              <div className="text-sm mb-2" style={{ color: 'rgb(161, 161, 170)' }}>TOTAL VALUE</div>
+              <div className="text-4xl font-bold mb-2">₹28,500</div>
+              <div className="text-2xl" style={{ color: 'rgb(218, 255, 1)' }}>You Pay: <strong>₹5,999</strong></div>
+              <div className="text-sm mt-2" style={{ color: 'rgb(161, 161, 170)' }}>Save ₹22,501 (79% OFF) — This month only</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Pricing */}
       <section id="pricing" className="py-20 md:py-32" style={{ background: 'rgb(26, 28, 30)' }}>
         <div className="container mx-auto px-6">
