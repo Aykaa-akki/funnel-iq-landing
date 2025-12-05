@@ -66,11 +66,16 @@ const ThankYou = () => {
             </div>
           )}
 
-          {/* Additional Information CTA */}
-          <div className="p-8 mb-8 text-center" style={{ background: 'rgb(26, 28, 30)', border: '1px solid rgba(255, 255, 255, 0.1)', borderRadius: '16px' }}>
-            <h2 className="text-2xl font-semibold mb-4">Help Us Serve You Better</h2>
-            <p className="mb-6" style={{ color: 'rgb(161, 161, 170)' }}>
-              Share a few more details about your business so we can customize your audit report and provide more targeted recommendations.
+          {/* Critical: Additional Information - Rephrased as Essential */}
+          <div className="p-8 mb-8 text-center" style={{ background: 'rgba(218, 255, 1, 0.05)', border: '2px solid rgba(218, 255, 1, 0.3)', borderRadius: '16px' }}>
+            <div className="mb-4">
+              <div className="inline-block px-4 py-2 rounded-full mb-3" style={{ background: 'rgba(218, 255, 1, 0.2)', color: 'rgb(218, 255, 1)', fontSize: '14px', fontWeight: '700' }}>
+                ⚡ CRITICAL STEP
+              </div>
+            </div>
+            <h2 className="text-2xl font-semibold mb-4">Complete Your Audit Details</h2>
+            <p className="mb-6 text-lg" style={{ color: 'rgb(218, 218, 218)' }}>
+              To deliver the <strong style={{ color: 'rgb(218, 255, 1)' }}>most accurate and actionable recommendations</strong>, our experts need a few key details about your business. This takes only 2 minutes and <strong>directly impacts the quality of your audit</strong>.
             </p>
             <a
               href="https://tally.so/r/0Qrzqy"
@@ -82,18 +87,21 @@ const ThankYou = () => {
                 color: 'rgb(17, 17, 19)',
                 border: 'none',
                 borderRadius: '12px',
-                padding: '16px 40px',
-                fontSize: '18px',
-                fontWeight: '600',
+                padding: '20px 48px',
+                fontSize: '19px',
+                fontWeight: '700',
                 cursor: 'pointer',
                 transition: 'all 0.2s ease',
                 textDecoration: 'none',
-                display: 'inline-block'
+                display: 'inline-flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                gap: '6px'
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.background = 'rgb(166, 190, 21)';
                 e.currentTarget.style.transform = 'translateY(-2px)';
-                e.currentTarget.style.boxShadow = '0 8px 25px rgba(218, 255, 1, 0.3)';
+                e.currentTarget.style.boxShadow = '0 12px 30px rgba(218, 255, 1, 0.4)';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.background = 'rgb(218, 255, 1)';
@@ -101,9 +109,10 @@ const ThankYou = () => {
                 e.currentTarget.style.boxShadow = 'none';
               }}
             >
-              Fill Additional Details (2 min)
+              <span>Complete Business Details Now</span>
+              <span style={{ fontSize: '13px', opacity: 0.85 }}>↓ Takes 2 minutes • Required for best results</span>
             </a>
-            <p className="text-xs mt-4" style={{ color: 'rgb(161, 161, 170)' }}>Optional but helps us tailor the audit to your specific needs</p>
+            <p className="text-sm mt-4" style={{ color: 'rgb(161, 161, 170)' }}>Without these details, our experts may miss critical optimization opportunities specific to your industry and audience.</p>
           </div>
 
           {/* Next Steps */}
