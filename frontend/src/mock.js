@@ -140,6 +140,7 @@ export const mockData = {
   testimonials: [
     {
       name: "Rajesh Kumar",
+      initials: "RK",
       title: "Founder, EdTech",
       quote: "Funnel-IQ found 12 critical issues in our checkout flow. We fixed the top 5 and saw a 34% increase in course sales within 3 weeks.",
       result: "+34% sales",
