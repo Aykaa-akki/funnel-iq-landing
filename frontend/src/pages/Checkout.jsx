@@ -213,7 +213,7 @@ const Checkout = () => {
                   <p className="text-xs mt-2" style={{ color: 'rgb(161, 161, 170)' }}>Enter your website or landing page URL</p>
                 </div>
 
-                {/* Submit Button */}
+                {/* Submit Button with Subtext */}
                 <button
                   type="submit"
                   disabled={isProcessing}
@@ -223,15 +223,16 @@ const Checkout = () => {
                     color: 'rgb(17, 17, 19)',
                     border: 'none',
                     borderRadius: '12px',
-                    padding: '18px 40px',
+                    padding: '20px 40px',
                     fontSize: '18px',
                     fontWeight: '600',
                     cursor: isProcessing ? 'not-allowed' : 'pointer',
                     transition: 'all 0.2s ease',
                     display: 'flex',
+                    flexDirection: 'column',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    gap: '8px'
+                    gap: '6px'
                   }}
                   onMouseEnter={(e) => {
                     if (!isProcessing) {
@@ -255,7 +256,8 @@ const Checkout = () => {
                     </>
                   ) : (
                     <>
-                      <span>Pay ₹{mockData.pricing.salePrice.toLocaleString()} & Get Audit</span>
+                      <span className="text-xl">Pay ₹{mockData.pricing.salePrice.toLocaleString()} & Get Audit</span>
+                      <span style={{ fontSize: '13px', opacity: 0.85 }}>↓ Get your report in 8-10 hours • Risk-free with money-back guarantee</span>
                     </>
                   )}
                 </button>
