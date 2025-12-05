@@ -122,40 +122,52 @@ const Home = () => {
                   <span style={{ fontSize: '12px', opacity: 0.8 }}>✓ 8-10 hour delivery • 100% money-back guarantee</span>
                 </Link>
 
-            <a 
-              href="#sample"
-              className="btn-secondary w-full sm:w-auto"
-              style={{
-                background: 'transparent',
-                color: 'rgb(255, 255, 255)',
-                border: '2px solid rgb(63, 63, 63)',
-                borderRadius: '12px',
-                padding: '16px 38px',
-                fontSize: '18px',
-                fontWeight: '600',
-                cursor: 'pointer',
-                transition: 'all 0.2s ease',
-                textDecoration: 'none',
-                display: 'inline-block',
-                minHeight: '56px'
-              }}
-              onMouseEnter={(e) => {
-                e.target.style.borderColor = 'rgb(218, 255, 1)';
-                e.target.style.color = 'rgb(218, 255, 1)';
-                e.target.style.background = 'rgba(218, 255, 1, 0.1)';
-              }}
-              onMouseLeave={(e) => {
-                e.target.style.borderColor = 'rgb(63, 63, 63)';
-                e.target.style.color = 'rgb(255, 255, 255)';
-                e.target.style.background = 'transparent';
-              }}
-            >
-              See Sample Report
-            </a>
+                <a 
+                  href="#sample"
+                  className="btn-secondary w-full sm:w-auto text-center"
+                  style={{
+                    background: 'transparent',
+                    color: 'rgb(255, 255, 255)',
+                    border: '2px solid rgb(63, 63, 63)',
+                    borderRadius: '12px',
+                    padding: '16px 38px',
+                    fontSize: '18px',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    transition: 'all 0.2s ease',
+                    textDecoration: 'none',
+                    display: 'inline-block',
+                    minHeight: '56px'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.target.style.borderColor = 'rgb(218, 255, 1)';
+                    e.target.style.color = 'rgb(218, 255, 1)';
+                    e.target.style.background = 'rgba(218, 255, 1, 0.1)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.target.style.borderColor = 'rgb(63, 63, 63)';
+                    e.target.style.color = 'rgb(255, 255, 255)';
+                    e.target.style.background = 'transparent';
+                  }}
+                >
+                  See Sample Report
+                </a>
+              </div>
+            </div>
+
+            {/* Hero Image */}
+            <div className="hidden md:block">
+              <img 
+                src={mockData.images.hero} 
+                alt="Funnel Analytics Dashboard" 
+                className="rounded-2xl shadow-2xl"
+                style={{ border: '1px solid rgba(218, 255, 1, 0.2)' }}
+              />
+            </div>
           </div>
 
           {/* Trust Bar */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
             {mockData.trustBadges.map((badge, idx) => {
               const IconComponent = { Users, Clock, TrendingUp, Shield }[badge.icon];
               return (
