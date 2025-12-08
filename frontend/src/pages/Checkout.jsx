@@ -45,20 +45,76 @@ const Checkout = () => {
 
     setIsProcessing(true);
 
-    // Mock payment processing
-    setTimeout(() => {
-      // Store data in session storage for thank you page
-      sessionStorage.setItem('orderData', JSON.stringify({
+    try {
+      // Create order on backend
+      const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/payment/create-order`, {
+        amount: mockData.pricing.salePrice * 100, // Convert to paise
+        currency: 'INR',
         phone: `${formData.countryCode}${formData.phone}`,
-        website: formData.website,
-        amount: mockData.pricing.salePrice,
-        orderId: 'ORDER_' + Date.now(),
-        timestamp: new Date().toISOString()
-      }));
+        website: formData.website
+      });
 
-      // Navigate to thank you page
-      navigate('/thank-you');
-    }, 2000);
+      const { order_id, amount, currency, key_id } = response.data;
+
+      // Razorpay options
+      const options = {
+        key: key_id,
+        amount: amount,
+        currency: currency,
+        name: 'Funnel-IQ',
+        description: 'Expert Funnel Audit - 8-10 Hour Delivery',
+        order_id: order_id,
+        handler: async function (response) {
+          try {
+            // Verify payment on backend
+            const verifyResponse = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/payment/verify-payment`, {
+              razorpay_order_id: response.razorpay_order_id,
+              razorpay_payment_id: response.razorpay_payment_id,
+              razorpay_signature: response.razorpay_signature,
+              phone: `${formData.countryCode}${formData.phone}`,
+              website: formData.website
+            });
+
+            if (verifyResponse.data.success) {
+              // Store data in session storage for thank you page
+              sessionStorage.setItem('orderData', JSON.stringify({
+                phone: `${formData.countryCode}${formData.phone}`,
+                website: formData.website,
+                amount: mockData.pricing.salePrice,
+                orderId: response.razorpay_order_id,
+                paymentId: response.razorpay_payment_id,
+                timestamp: new Date().toISOString()
+              }));
+
+              // Navigate to thank you page
+              navigate('/thank-you');
+            }
+          } catch (error) {
+            console.error('Payment verification failed:', error);
+            alert('Payment verification failed. Please contact support.');
+            setIsProcessing(false);
+          }
+        },
+        prefill: {
+          contact: `${formData.countryCode}${formData.phone}`
+        },
+        theme: {
+          color: '#DAFF01'
+        },
+        modal: {
+          ondismiss: function() {
+            setIsProcessing(false);
+          }
+        }
+      };
+
+      const razorpayInstance = new window.Razorpay(options);
+      razorpayInstance.open();
+    } catch (error) {
+      console.error('Error creating order:', error);
+      alert('Failed to initiate payment. Please try again.');
+      setIsProcessing(false);
+    }
   };
 
   const handleInputChange = (e) => {
