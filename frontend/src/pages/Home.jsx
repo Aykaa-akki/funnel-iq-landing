@@ -427,8 +427,8 @@ const Home = () => {
                   e.currentTarget.style.boxShadow = 'none';
                 }}
               >
-                <span className="text-xl">Get My FunnelIQ Audit Now</span>
-                <span style={{ fontSize: '13px', opacity: 0.85 }}>↓ Start fixing your funnel in the next 8-10 hours</span>
+                <span className="text-lg md:text-xl">Get My FunnelIQ Audit Now</span>
+                <span style={{ fontSize: '12px', opacity: 0.85, textAlign: 'center', whiteSpace: 'normal' }}>Start fixing your funnel in 8-10 hours</span>
               </Link>
 
               <div className="mt-6 grid grid-cols-2 md:flex md:items-center md:justify-center gap-4 md:gap-6 text-xs md:text-sm" style={{ color: 'rgb(161, 161, 170)' }}>
