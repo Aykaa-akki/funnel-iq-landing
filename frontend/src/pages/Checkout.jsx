@@ -161,7 +161,7 @@ const Checkout = () => {
           <div className="mb-8 p-4 rounded-lg text-center" style={{ background: 'rgba(239, 68, 68, 0.1)', border: '1px solid rgba(239, 68, 68, 0.3)' }}>
             <div className="flex items-center justify-center gap-2 mb-2">
               <Clock size={20} style={{ color: 'rgb(239, 68, 68)' }} />
-              <span style={{ color: 'rgb(239, 68, 68)', fontWeight: '600', fontSize: '18px' }}>⚡ Only 3 slots left today!</span>
+              <span style={{ color: 'rgb(239, 68, 68)', fontWeight: '600', fontSize: '18px' }}>⚡ Few slots available for today</span>
             </div>
             <p className="text-sm" style={{ color: 'rgb(218, 218, 218)' }}>Limited capacity to maintain quality. Price increases to ₹11,499 next month.</p>
           </div>
