@@ -150,7 +150,7 @@ const Home = () => {
                     e.target.style.background = 'transparent';
                   }}
                 >
-                  See Sample Report
+                  See Issues Fixed After This Analysis
                 </a>
               </div>
             </div>
