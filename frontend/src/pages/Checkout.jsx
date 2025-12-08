@@ -312,8 +312,8 @@ const Checkout = () => {
                     </>
                   ) : (
                     <>
-                      <span className="text-xl">Pay ₹{mockData.pricing.salePrice.toLocaleString()} & Get Audit</span>
-                      <span style={{ fontSize: '13px', opacity: 0.85 }}>↓ Get your report in 8-10 hours • Risk-free with money-back guarantee</span>
+                      <span className="text-lg md:text-xl">Pay ₹{mockData.pricing.salePrice.toLocaleString()} & Get Audit</span>
+                      <span style={{ fontSize: '12px', opacity: 0.85, textAlign: 'center', whiteSpace: 'normal' }}>Get your report in 8-10 hours • Risk-free guarantee</span>
                     </>
                   )}
                 </button>
