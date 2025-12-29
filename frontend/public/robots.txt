@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.aykaa.me/funnel-iq/sitemap.xml
